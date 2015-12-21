@@ -1,4 +1,3 @@
-santas_password = 'vzbxkghb'
 
 
 def convert_to_num_list(password):
@@ -61,9 +60,11 @@ def increment_password(password):
     return convert_from_num_list(letter_list)
 
 
-def find_next_password():
-    password = santas_password
+def find_next_password(password, ignore_initial=False):
     count = 0
+
+    if ignore_initial:
+        password = increment_password(password)
 
     while not meets_requirements(password):
         if count%1000000 == 0:
@@ -75,4 +76,5 @@ def find_next_password():
 
 
 if __name__ == "__main__":
-    print 'next password = {}'.format(find_next_password())
+    # print 'part 1 next password = {}'.format(find_next_password('vzbxkghb'))
+    print 'part 2 next password = {}'.format(find_next_password('vzbxxyzz', ignore_initial=True))
