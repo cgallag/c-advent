@@ -10,7 +10,7 @@ def get_flavor_traits(flavor):
     return flavor_dict
 
 def get_best_combination(flavor_data):
-
+    pass
 
 def get_best_cookie():
     flavor_data = {}
