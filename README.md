@@ -7,7 +7,7 @@ I created this repository to store my work on the various puzzles. You can get t
 
 This is the current state of my advent tree:
 
-![advent tree](img/advent_of_code_05_22.png)
+![advent tree](/img/advent_of_code_05_22.png?raw=true)
 
 Current star count: 22
 
